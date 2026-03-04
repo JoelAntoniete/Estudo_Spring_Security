@@ -1,0 +1,63 @@
+### GET request to example server
+GET http://localhost:8080/test
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInN1YiI6Im1hdGhldXNsZWFuZHJvZmVycmVpcmFAZ21haWwuY29tIiwiZXhwIjoxNzU5MTg2NjM2LCJpYXQiOjE3NTkxMDAyMzZ9.SYwGqxEICp9SuPaAduZUaEQT_MWgDRjG5-tAPoHW00o
+
+###
+
+POST http://localhost:8080/auth/register
+Content-Type: application/json
+
+{
+  "name" : "Maria Admin",
+  "email" : "maria@gmail.com",
+  "password" : "123456",
+  "role" : "ROLE_ADMIN"
+}
+
+###
+
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "joao@gmail.com",
+  "password": "123456"
+}
+
+
+###
+
+GET http://localhost:8080/user/dashboard
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJzdWIiOiJqb2FvQGdtYWlsLmNvbSIsImV4cCI6MTc1OTg4NTUyOCwiaWF0IjoxNzU5Nzk5MTI4fQ.hwyScTyaSroHjH7CuHSrUfslH43Mln6dsbeH0LapSeI
+
+
+###
+
+GET http://localhost:8080/admin/panel
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJzdWIiOiJqb2FvQGdtYWlsLmNvbSIsImV4cCI6MTc1OTg4NTUyOCwiaWF0IjoxNzU5Nzk5MTI4fQ.hwyScTyaSroHjH7CuHSrUfslH43Mln6dsbeH0LapSeI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
